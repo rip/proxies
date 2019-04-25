@@ -26,6 +26,7 @@ def z(fpl):
 			p += c  # string together 
 
 	print(p)
+	
 z('https://free-proxy-list.net')
 z('https://www.us-proxy.org')
 z('https://www.sslproxies.org')
