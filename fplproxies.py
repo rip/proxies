@@ -26,8 +26,8 @@ for result in results:
 
 	cells = result.html.find('td')
 
-	p = ''  # string as data stream for proxies
-
+	p = ''
+	
 	for cell in cells:
 
 		c = cell.text 
@@ -38,6 +38,6 @@ for result in results:
 
 				c = '\n' + c + ':'  # ip will have "." then add newline in front of ip to separate proxies \nip:port\nip:port 
 			
-			p += c  # string together 
+			p += c
 
 	print(p)
