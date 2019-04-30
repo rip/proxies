@@ -1,24 +1,12 @@
-'''fplproxies.py
-
-python3 fplproxies.py > proxies.txt
-
-scrapes 600 http(s) proxies to ip:port
-
-https://free-proxy-list.net 300
-https://www.us-proxy.org 200
-https://www.sslproxies.org 100
-
-now async! like half a second faster! wow!'''
-
 from requests_html import AsyncHTMLSession
 
 a = AsyncHTMLSession()  # session appears to be currently required for a single get request with this library?
 
-async def 一(): return await a.get('https://free-proxy-list.net')
+async def 一(): return await a.get('https://free-proxy-list.net')  # 300
 
-async def 二(): return await a.get('https://www.us-proxy.org')
+async def 二(): return await a.get('https://www.us-proxy.org')  # 200
 
-async def 三(): return await a.get('https://www.sslproxies.org')
+async def 三(): return await a.get('https://www.sslproxies.org')  # 100
 
 results = a.run(一, 二, 三)
 
