@@ -24,7 +24,7 @@ for result in results:
 
 			if '.' in c:
 
-				c = '\n' + c + ':'  # ip will have "." then add newline in front of ip to separate proxies \nip:port\nip:port 
+				c = '\n' + c + ':'  # ip will have "." then add newline in front of ip to separate proxies \nip:port\nip:port
 
 			p += c
 
