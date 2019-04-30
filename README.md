@@ -1,5 +1,5 @@
 # random proxy scripts
-## obtain over 7 proxies
+### obtain over 7 proxies
 `python3 proxyscript.py > proxies.txt`
 
 ### fplproxies.py
