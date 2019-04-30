@@ -15,17 +15,17 @@ for result in results:
 	cells = result.html.find('td')
 
 	p = ''
-	
+
 	for cell in cells:
 
 		c = cell.text 
 
 		if not c.lower().islower():  # lowercase all letters and then check if islower to determine if the cell contains letters (only ip and port cells will remain)
-			
+
 			if '.' in c:
 
 				c = '\n' + c + ':'  # ip will have "." then add newline in front of ip to separate proxies \nip:port\nip:port 
-			
+
 			p += c
 
 	print(p)
